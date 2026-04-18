@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Ediae Sarah</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">ES</div>
+      <div class="logo-text">Ediae <span>Sarah</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house-heart"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li><a href="contact.html" class="nav-btn active-btn"><i class="fa-solid fa-id-card-clip"></i> Connect</a></li>
+    </ul>
+    <button class="burger" id="burger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+ 
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"><i class="fa-solid fa-house-heart"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+    <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <div class="mobile-divider"></div>
+    <a href="contact.html" class="mobile-btn"><i class="fa-solid fa-id-card-clip"></i> Connect with Me</a>
+  </div>
+ 
+  <!-- PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="container">
+      <p class="section-tag light-tag"><i class="fa-solid fa-paper-plane"></i> Let's Connect</p>
+      <h1 class="page-hero-title light-title">Say Hello to<br><em>Sarah.</em></h1>
+      <p class="page-hero-sub light-sub">Whether it's a research collaboration, internship inquiry, or just to say hello — my inbox is always open. I respond within 24 hours.</p>
+    </div>
+  </section>
+ 
+  <!-- CONTACT BODY -->
+  <section class="contact-body">
+    <div class="container contact-grid">
+ 
+      <!-- LEFT PANEL -->
+      <div class="contact-left">
+ 
+        <div class="info-card">
+          <h3><i class="fa-solid fa-address-card"></i> Contact Details</h3>
+          <div class="info-row">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p class="i-label">Email</p>
+              <p class="i-val">sarah.ediae@student.edu</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <p class="i-label">Phone</p>
+              <p class="i-val">+234 803 456 7890</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <p class="i-label">Location</p>
+              <p class="i-val">Delta State, Nigeria</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <p class="i-label">Response Time</p>
+              <p class="i-val">Usually within 24 hours</p>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="info-card">
+          <h3><i class="fa-solid fa-share-nodes"></i> Find Me Online</h3>
+          <div class="social-links">
+            <a href="#" class="social-row">
+              <div class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <p class="i-label">LinkedIn</p>
+                <p class="i-val">linkedin.com/in/ediae-sarah</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square ext-arrow"></i>
+            </a>
+            <a href="#" class="social-row">
+              <div class="social-icon twitter"><i class="fa-brands fa-x-twitter"></i></div>
+              <div>
+                <p class="i-label">Twitter / X</p>
+                <p class="i-val">@sarah_him_student</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square ext-arrow"></i>
+            </a>
+            <a href="#" class="social-row">
+              <div class="social-icon researchgate"><i class="fa-brands fa-researchgate"></i></div>
+              <div>
+                <p class="i-label">ResearchGate</p>
+                <p class="i-val">Ediae Sarah</p>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square ext-arrow"></i>
+            </a>
+          </div>
+        </div>
+ 
+        <div class="info-card avail-card">
+          <div class="avail-pulse"></div>
+          <h4><i class="fa-solid fa-circle-check"></i> Open to Opportunities</h4>
+          <p>Currently seeking <strong>clinical attachments</strong>, <strong>research internships</strong>, and <strong>health data volunteer roles</strong> — starting <strong>July 2025</strong>.</p>
+        </div>
+ 
+      </div>
+ 
+      <!-- RIGHT: FORM -->
+      <div class="contact-right">
+        <div class="form-card">
+          <h3><i class="fa-solid fa-pen-nib"></i> Send a Message</h3>
+          <p class="form-sub">I'd love to hear from you. Fill in the form and I'll be in touch.</p>
+ 
+          <div id="formBody">
+            <div class="form-row-2">
+              <div class="field-group">
+                <label><i class="fa-solid fa-user"></i> First Name</label>
+                <input type="text" placeholder="e.g. Amara"/>
+              </div>
+              <div class="field-group">
+                <label><i class="fa-solid fa-user"></i> Last Name</label>
+                <input type="text" placeholder="e.g. Johnson"/>
+              </div>
+            </div>
+            <div class="field-group">
+              <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" placeholder="your@email.com"/>
+            </div>
+            <div class="field-group">
+              <label><i class="fa-solid fa-briefcase-medical"></i> Reason for Contact</label>
+              <select>
+                <option value="">Select a topic...</option>
+                <option>Research Collaboration</option>
+                <option>Internship / Attachment Inquiry</option>
+                <option>Academic Partnership</option>
+                <option>Volunteer Opportunity</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label><i class="fa-solid fa-building-circle-check"></i> Organisation (optional)</label>
+              <input type="text" placeholder="e.g. LUTH, NCDC, NGO Name"/>
+            </div>
+            <div class="field-group">
+              <label><i class="fa-solid fa-comment-medical"></i> Your Message</label>
+              <textarea placeholder="Tell me about the opportunity, project, or question you have in mind..."></textarea>
+            </div>
+            <button class="form-submit" onclick="sendMessage()">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+ 
+          <div class="form-success" id="successState">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h4>Message Received!</h4>
+            <p>Thank you for reaching out, Sarah will reply within 24 hours.</p>
+            <button class="btn-ghost-pink" style="margin-top:20px" onclick="resetForm()">
+              <i class="fa-solid fa-rotate-left"></i> Send Another Message
+            </button>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- CV Banner -->
+  <section class="cv-banner">
+    <div class="container cta-inner">
+      <div>
+        <h2><i class="fa-solid fa-file-medical"></i> Download My CV</h2>
+        <p>Get my full academic record, skills, and clinical experience summary.</p>
+      </div>
+      <a href="#" class="btn-primary-dark"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <p><i class="fa-solid fa-heart"></i> Designed by <strong>Ediae Sarah</strong> &nbsp;·&nbsp; <i class="fa-regular fa-copyright"></i> 2025</p>
+  </footer>
+ 
+  <script src="nav.js"></script>
+  <script>
+    function sendMessage() {
+      document.getElementById('formBody').style.display = 'none';
+      document.getElementById('successState').style.display = 'flex';
+    }
+    function resetForm() {
+      document.getElementById('formBody').style.display = 'block';
+      document.getElementById('successState').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

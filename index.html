@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ediae Sarah — Health Information Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">ES</div>
+      <div class="logo-text">Ediae <span>Sarah</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active"><i class="fa-solid fa-house-heart"></i> Home</a></li>
+      <li><a href="about.html"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li><a href="contact.html" class="nav-btn"><i class="fa-solid fa-id-card-clip"></i> Connect</a></li>
+    </ul>
+    <button class="burger" id="burger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+ 
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="active"><i class="fa-solid fa-house-heart"></i> Home</a>
+    <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <div class="mobile-divider"></div>
+    <a href="contact.html" class="mobile-btn"><i class="fa-solid fa-id-card-clip"></i> Connect with Me</a>
+  </div>
+ 
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-inner container">
+      <div class="hero-photo-col">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-frame">
+            <!--
+              YOUR PHOTO HERE
+              Save your photo as "sarah-photo.jpg" in this folder.
+              Best size: 400x500px, portrait.
+            -->
+            <img
+              src="./image.png"
+              alt="Ediae Sarah"
+              class="hero-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <div class="photo-placeholder">
+              <i class="fa-solid fa-camera-retro"></i>
+              <span>Add your photo</span>
+              <small><code>sarah-photo.jpg</code></small>
+            </div>
+          </div>
+          <div class="ring-badge ring-top"><i class="fa-solid fa-heart-pulse"></i> HIM Student</div>
+          <div class="ring-badge ring-bot"><i class="fa-solid fa-star"></i> 200 Level</div>
+        </div>
+      </div>
+ 
+      <div class="hero-content">
+        <p class="hero-eyebrow"><i class="fa-solid fa-graduation-cap"></i> Health Information Management · 200 Level</p>
+        <h1>Hi, I'm<br><em>Ediae Sarah</em></h1>
+        <p class="hero-sub">A dedicated health information management student passionate about bridging healthcare and technology — turning data into better patient outcomes and smarter health systems.</p>
+        <div class="hero-id-strip">
+          <div class="id-strip-item">
+            <i class="fa-solid fa-id-badge"></i>
+            <div>
+              <small>Student ID</small>
+              <strong>HIM/200/2024/081</strong>
+            </div>
+          </div>
+          <div class="id-strip-sep"></div>
+          <div class="id-strip-item">
+            <i class="fa-solid fa-building-columns"></i>
+            <div>
+              <small>Faculty</small>
+              <strong>Health Sciences</strong>
+            </div>
+          </div>
+          <div class="id-strip-sep"></div>
+          <div class="id-strip-item">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div>
+              <small>Session</small>
+              <strong>2024 / 2025</strong>
+            </div>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="about.html" class="btn-primary"><i class="fa-solid fa-user-circle"></i> View Profile</a>
+          <a href="contact.html" class="btn-ghost"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+          <a href="#" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ═══ QUICK STATS ═══ -->
+  <section class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat-item">
+        <i class="fa-solid fa-file-medical"></i>
+        <div>
+          <strong>\4.8</strong>
+          <span>Current GPA</span>
+        </div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <strong>4</strong>
+          <span>Certifications</span>
+        </div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <i class="fa-solid fa-hospital-user"></i>
+        <div>
+          <strong>2</strong>
+          <span>Clinical Attachments</span>
+        </div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <i class="fa-solid fa-hand-holding-medical"></i>
+        <div>
+          <strong>5+</strong>
+          <span>Volunteer Hours (months)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ═══ CORE AREAS ═══ -->
+  <section class="areas-section">
+    <div class="container">
+      <p class="section-tag"><i class="fa-solid fa-stethoscope"></i> Areas of Focus</p>
+      <h2 class="section-title">What I Study & Practice</h2>
+      <div class="areas-grid">
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Health Data Management</h3>
+          <p>Organizing, storing, and protecting patient health records using modern electronic health record (EHR) systems.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h3>Medical Coding (ICD-11)</h3>
+          <p>Translating clinical diagnoses and procedures into standardized codes for billing, research, and reporting.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Health Informatics</h3>
+          <p>Applying technology and data science to improve how healthcare information is captured, shared, and used.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Health Records Privacy</h3>
+          <p>Ensuring confidentiality and compliance with legal standards governing patient data access and protection.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-microscope"></i></div>
+          <h3>Clinical Research</h3>
+          <p>Supporting evidence-based research through accurate data collection, analysis, and ethical documentation.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Public Health</h3>
+          <p>Understanding population health trends and using data to inform community health decisions and policies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects-section">
+    <div class="container">
+      <p class="section-tag"><i class="fa-solid fa-folder-open"></i> Projects & Work</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+ 
+        <div class="project-card">
+          <!--
+            PROJECT IMAGE: Save as "project1.jpg" in this folder.
+            Recommended: 600x360px screenshot or photo of your work.
+          -->
+          <div class="project-thumb">
+            <img src="./douglascountysurveygraphs.png" alt="Health Records Digitisation"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="project-thumb-ph"><i class="fa-solid fa-image"></i><span>project1.jpg</span></div>
+            <div class="project-thumb-icon"><i class="fa-solid fa-file-medical-alt"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Health Records Digitisation Study</h3>
+            <p>Researched the transition from paper to electronic health records in a local hospital — identified key workflow gaps and proposed improvements.</p>
+            <div class="project-tags"><span>EHR</span><span>Research</span><span>Data Analysis</span></div>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Report</a>
+          </div>
+        </div>
+ 
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="./ICD-11-Coding.jpg" alt="ICD-11 Coding Practice"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="project-thumb-ph"><i class="fa-solid fa-image"></i><span>project2.jpg</span></div>
+            <div class="project-thumb-icon"><i class="fa-solid fa-code"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>ICD-11 Coding Practice Portfolio</h3>
+            <p>A curated collection of 50+ coded clinical case studies covering diagnoses across general medicine, surgery, and obstetrics.</p>
+            <div class="project-tags"><span>ICD-11</span><span>Medical Coding</span><span>Clinical</span></div>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Portfolio</a>
+          </div>
+        </div>
+ 
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="./survay report.png" alt="Community Health Survey"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+            <div class="project-thumb-ph"><i class="fa-solid fa-image"></i><span>project3.jpg</span></div>
+            <div class="project-thumb-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          </div>
+          <div class="project-body">
+            <h3>Community Health Survey Report</h3>
+            <p>Conducted and analysed a health survey among 120 households to assess awareness of basic healthcare services and access barriers.</p>
+            <div class="project-tags"><span>Public Health</span><span>Survey</span><span>Statistics</span></div>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Report</a>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ═══ CTA BANNER ═══ -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div>
+        <h2><i class="fa-solid fa-handshake-simple"></i> Open to Collaborations</h2>
+        <p>Research projects, clinical attachments, or health tech initiatives — let's work together.</p>
+      </div>
+      <a href="contact.html" class="btn-primary-dark"><i class="fa-solid fa-paper-plane"></i> Reach Out</a>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <p><i class="fa-solid fa-heart"></i> Designed by <strong>Ediae Sarah</strong> &nbsp;·&nbsp; <i class="fa-regular fa-copyright"></i> 2025</p>
+  </footer>
+ 
+  <script src="nav.js"></script>
+</body>
+</html>
+ 
